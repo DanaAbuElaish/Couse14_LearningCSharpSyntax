@@ -57,6 +57,19 @@ namespace Couse14_LearningCSharpSyntax
         }
     }
 
+    class FileResource : IDisposable
+    {
+        public FileResource()
+        {
+            Console.WriteLine("Open file");
+        }
+
+        public void Dispose()
+        {
+            Console.WriteLine("Close file");
+        }
+    }
+
     internal class Program
     {
         public static int Add(int a, int b)
@@ -121,6 +134,13 @@ namespace Couse14_LearningCSharpSyntax
 
             Console.WriteLine("Name: " + p.Name);
             Console.WriteLine("Age: " + p.Age);
+
+
+            // Using IDisposable
+            using (FileResource f = new FileResource())
+            {
+                Console.WriteLine("Work with file");
+            }
         }
     }
 }
