@@ -17,7 +17,10 @@ namespace Couse14_LearningCSharpSyntax
             string s = "Hello";
             s = s + " World";
             Console.WriteLine(s);
-           
+
+            Console.Write("Enter number: ");
+            int d = int.Parse(Console.ReadLine());
+            Console.WriteLine("Value: " + d);
         }
     }
 }
