@@ -8,6 +8,10 @@ namespace Couse14_LearningCSharpSyntax
         {
             Console.WriteLine("Hello World");
             Console.ReadKey();
+            int x = 10;
+            var y = 20;
+            const double PI = 3.14;
+           
         }
     }
 }
