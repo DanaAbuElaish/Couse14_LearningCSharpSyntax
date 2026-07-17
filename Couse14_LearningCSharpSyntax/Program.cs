@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
+
 namespace Couse14_LearningCSharpSyntax
 {
 
@@ -87,11 +88,19 @@ namespace Couse14_LearningCSharpSyntax
     }
 
 
+    // Delegate example for calling methods
+    delegate void Printer(int x);
+
+
     internal class Program
     {
         public static int Add(int a, int b)
         {
             return a + b;
+        }
+        static void Print(int x)
+        {
+            Console.WriteLine(x);
         }
 
         static void Main(string[] args)
@@ -187,6 +196,12 @@ namespace Couse14_LearningCSharpSyntax
 
             Console.WriteLine("Max Number: " + maxNumber);
             Console.WriteLine("Max String: " + maxString);
+
+
+
+            // Using Delegate to call methods dynamically
+            Printer printer = new Printer(Print);
+            printer(10);
         }
     }
 }
