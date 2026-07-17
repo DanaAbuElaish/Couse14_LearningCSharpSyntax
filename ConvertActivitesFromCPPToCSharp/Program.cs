@@ -6,7 +6,7 @@ namespace ConvertActivitesFromCPPToCSharp
     {
         static void Main(string[] args)
         {
-            
+            //Factorial
             Console.Write("Enter number: ");
             int number = int.Parse(Console.ReadLine());
             int fact = 1;
