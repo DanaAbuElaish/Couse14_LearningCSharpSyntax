@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Threading.Tasks;
 
 namespace Couse14_LearningCSharpSyntax
 {
@@ -103,7 +103,15 @@ namespace Couse14_LearningCSharpSyntax
             Console.WriteLine(x);
         }
 
-        static void Main(string[] args)
+
+        // Async method that returns a value after waiting
+        static async Task<int> GetValueAsync()
+        {
+            await Task.Delay(1000);
+            return 42;
+        }
+        
+        static async Task Main(string[] args)
         {
             Console.WriteLine("Hello World");
             
@@ -202,6 +210,11 @@ namespace Couse14_LearningCSharpSyntax
             // Using Delegate to call methods dynamically
             Printer printer = new Printer(Print);
             printer(10);
+
+
+            // Using Async/Await for asynchronous programming
+            int result = await GetValueAsync();
+            Console.WriteLine(result);
         }
     }
 }
