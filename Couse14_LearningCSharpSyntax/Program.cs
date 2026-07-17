@@ -3,6 +3,22 @@
 
 namespace Couse14_LearningCSharpSyntax
 {
+    class Animal
+    {
+        public virtual void Speak()
+        {
+            Console.WriteLine("Animal");
+        }
+    }
+
+    class Dog : Animal
+    {
+        public override void Speak()
+        {
+            Console.WriteLine("Dog");
+        }
+    }
+
     internal class Program
     {
         public static int Add(int a, int b)
@@ -48,6 +64,11 @@ namespace Couse14_LearningCSharpSyntax
 
 
             Console.WriteLine(Add(3, 4));
+
+
+            //Calling dog
+            Dog dog = new Dog();
+            dog.Speak();
         }
     }
 }
