@@ -70,6 +70,23 @@ namespace Couse14_LearningCSharpSyntax
         }
     }
 
+    // Generic method that works with different data types
+    class Utils
+    {
+        public static T Max<T>(T a, T b) where T : IComparable
+        {
+            if (a.CompareTo(b) > 0)
+            {
+                return a;
+            }
+            else
+            {
+                return b;
+            }
+        }
+    }
+
+
     internal class Program
     {
         public static int Add(int a, int b)
@@ -148,6 +165,7 @@ namespace Couse14_LearningCSharpSyntax
             Dictionary<string, int> ages = new Dictionary<string, int>();
 
 
+
             // Exception handling using try-catch-finally
             try
             {
@@ -161,6 +179,14 @@ namespace Couse14_LearningCSharpSyntax
             {
                 Console.WriteLine("Done");
             }
+
+
+            // Using Generics to create reusable methods with different data types
+            int maxNumber = Utils.Max(10, 20);
+            string maxString = Utils.Max("Apple", "Banana");
+
+            Console.WriteLine("Max Number: " + maxNumber);
+            Console.WriteLine("Max String: " + maxString);
         }
     }
 }
