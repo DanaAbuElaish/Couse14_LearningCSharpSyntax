@@ -1,9 +1,15 @@
 ﻿using System;
 
+
 namespace Couse14_LearningCSharpSyntax
 {
     internal class Program
     {
+        public static int Add(int a, int b)
+        {
+            return a + b;
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World");
@@ -38,6 +44,10 @@ namespace Couse14_LearningCSharpSyntax
             {
                 Console.WriteLine(i);
             }
+
+
+
+            Console.WriteLine(Add(3, 4));
         }
     }
 }
