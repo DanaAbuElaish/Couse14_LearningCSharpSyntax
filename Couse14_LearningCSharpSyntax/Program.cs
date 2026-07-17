@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 
 namespace Couse14_LearningCSharpSyntax
 {
@@ -141,6 +141,11 @@ namespace Couse14_LearningCSharpSyntax
             {
                 Console.WriteLine("Work with file");
             }
+
+
+            // Using Collections like List and Dictionary to store and manage data
+            List<int> nums = new List<int>() { 1, 2, 3 };
+            Dictionary<string, int> ages = new Dictionary<string, int>();
         }
     }
 }
