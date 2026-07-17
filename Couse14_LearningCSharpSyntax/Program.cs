@@ -87,7 +87,7 @@ namespace Couse14_LearningCSharpSyntax
             dog.Speak();
 
 
-            //Cakking bird
+            //Calling bird
             Bird b = new Bird();
             b.Fly();
         }
