@@ -35,6 +35,28 @@ namespace Couse14_LearningCSharpSyntax
         }
     }
 
+    class Person
+    {
+        public string Name { get; set; }
+
+        private int age;
+
+        public int Age
+        {
+            get
+            {
+                return age;
+            }
+            set
+            {
+                if (value >= 0)
+                {
+                    age = value;
+                }
+            }
+        }
+    }
+
     internal class Program
     {
         public static int Add(int a, int b)
@@ -90,6 +112,15 @@ namespace Couse14_LearningCSharpSyntax
             //Calling bird
             Bird b = new Bird();
             b.Fly();
+
+
+            // Calling Person
+            Person p = new Person();
+            p.Name = "Dana";
+            p.Age = 22;
+
+            Console.WriteLine("Name: " + p.Name);
+            Console.WriteLine("Age: " + p.Age);
         }
     }
 }
