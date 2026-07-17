@@ -146,6 +146,21 @@ namespace Couse14_LearningCSharpSyntax
             // Using Collections like List and Dictionary to store and manage data
             List<int> nums = new List<int>() { 1, 2, 3 };
             Dictionary<string, int> ages = new Dictionary<string, int>();
+
+
+            // Exception handling using try-catch-finally
+            try
+            {
+                throw new Exception("Error!");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Done");
+            }
         }
     }
 }
