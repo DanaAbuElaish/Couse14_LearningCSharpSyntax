@@ -4,6 +4,10 @@ namespace ConvertActivitesFromCPPToCSharp
 {
     internal class Program
     {
+        static int funcAdd(int a , int b)
+        {
+            return a + b;
+        }
         static void Main(string[] args)
         {
             //Factorial
@@ -35,6 +39,13 @@ namespace ConvertActivitesFromCPPToCSharp
             {
                 Console.WriteLine(i);
             }
+
+
+
+            //Functions / Methods
+            //Calling Add Function
+            Console.WriteLine("3 + 4 = " + funcAdd(3, 4));
+
         }
 
     }
