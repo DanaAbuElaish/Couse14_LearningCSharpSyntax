@@ -21,6 +21,17 @@ namespace Couse14_LearningCSharpSyntax
             Console.Write("Enter number: ");
             int d = int.Parse(Console.ReadLine());
             Console.WriteLine("Value: " + d);
+
+
+            int n = 5;
+            if (n > 0)
+            {
+                Console.WriteLine("Positive");
+            }
+            else
+            {
+                Console.WriteLine("Non-positive");
+            }
         }
     }
 }
