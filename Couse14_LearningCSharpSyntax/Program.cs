@@ -7,10 +7,16 @@ namespace Couse14_LearningCSharpSyntax
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World");
-            Console.ReadKey();
+            
+
+
             int x = 10;
             var y = 20;
             const double PI = 3.14;
+
+            string s = "Hello";
+            s = s + " World";
+            Console.WriteLine(s);
            
         }
     }
