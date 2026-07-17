@@ -4,10 +4,7 @@ namespace ConvertActivitesFromCPPToCSharp
 {
     internal class Program
     {
-        static int funcAdd(int a , int b)
-        {
-            return a + b;
-        }
+        
         static void Main(string[] args)
         {
             //Factorial
@@ -21,30 +18,6 @@ namespace ConvertActivitesFromCPPToCSharp
             Console.Write("Factorial for " + number + " = " + fact);
 
 
-            // Conditional Statements
-            int n = 5;
-            if (n > 0)
-            {
-                Console.WriteLine("\nPositive");
-            }
-            else
-            {
-                Console.WriteLine("\nNegaitve");
-            }
-
-
-
-            //Loops
-            for (int i = 0; i < 5; i++)
-            {
-                Console.WriteLine(i);
-            }
-
-
-
-            //Functions / Methods
-            //Calling Add Function
-            Console.WriteLine("3 + 4 = " + funcAdd(3, 4));
 
         }
 
