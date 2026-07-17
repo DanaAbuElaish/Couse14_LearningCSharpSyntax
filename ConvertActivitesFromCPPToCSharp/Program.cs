@@ -15,6 +15,20 @@ namespace ConvertActivitesFromCPPToCSharp
                     fact = fact * i;
             }
             Console.Write("Factorial for " + number + " = " + fact);
+
+
+            // Conditional Statements
+            int n = 5;
+            if (n > 0)
+            {
+                Console.WriteLine("\nPositive");
+            }
+            else
+            {
+                Console.WriteLine("\nNegaitve");
+            }
+
         }
+
     }
 }
