@@ -3,6 +3,22 @@
 
 namespace Couse14_LearningCSharpSyntax
 {
+
+    interface IFly
+    {
+        void Fly();
+    }
+
+    class Bird : IFly
+    {
+        public void Fly()
+        {
+            Console.WriteLine("Flying...");
+        }
+    }
+
+
+
     class Animal
     {
         public virtual void Speak()
@@ -69,6 +85,11 @@ namespace Couse14_LearningCSharpSyntax
             //Calling dog
             Dog dog = new Dog();
             dog.Speak();
+
+
+            //Cakking bird
+            Bird b = new Bird();
+            b.Fly();
         }
     }
 }
