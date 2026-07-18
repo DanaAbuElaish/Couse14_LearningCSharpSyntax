@@ -133,7 +133,7 @@ namespace Course14
 
 // ****************************************************** 4 *******************************************************
 // ************************************************** Escape Characters *******************************************************
-
+/*
 using System;
 
 
@@ -171,6 +171,55 @@ namespace Course14
             Console.WriteLine("\a");
 
             Console.ReadKey();
+
+        }
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ****************************************************** 5 *******************************************************
+// *************************************** Single Line/Multiple Lines Comments *******************************************************
+
+using System;
+
+
+namespace Course14
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //This is a single line comment
+            Console.WriteLine("My name is Dana Abu Elaish");
+
+            /*
+             This is
+            a multiple line
+            comment.
+             */
+
+           
 
         }
     }
