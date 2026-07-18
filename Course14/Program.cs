@@ -90,7 +90,7 @@ namespace Course14
 
 // ****************************************************** 3 *******************************************************
 // **************************************************   Formatted String *******************************************************
-
+/*
 using System;
 
 
@@ -104,6 +104,74 @@ namespace Course14
             Console.WriteLine("{0} {1}", "Welcome to", "Programming Advices");
             Console.WriteLine("Hi my name is : {0} I Live in {1}", "Dana", "Palestine");
             Console.ReadKey();
+        }
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ****************************************************** 4 *******************************************************
+// ************************************************** Escape Characters *******************************************************
+
+using System;
+
+
+namespace Course14
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Useful Escape Characters:\n");
+
+            //NewLine 
+            Console.WriteLine("NewLine:");
+            Console.WriteLine("Welcome to \n Programming Advices\n");
+
+            //Tab
+            Console.WriteLine("Tab: ");
+            Console.WriteLine("Welcome to \tProgramming Advices\n");
+
+            //Backspace
+            Console.WriteLine("Backspace:");
+            Console.WriteLine("Welcome to \bProgramming Advices\n");
+
+            //Single Quote
+            Console.WriteLine("Single Quate : ");
+            Console.WriteLine("Welcome to \'Programming  Advices\n");
+
+            //Double Quote
+            Console.WriteLine("Double Quate : ");
+            Console.WriteLine("Welcome to \\Programming  Advices\n");
+
+            //Alert
+            Console.WriteLine("Alert : ");
+            Console.WriteLine("\a");
+
+            Console.ReadKey();
+
         }
     }
 }
