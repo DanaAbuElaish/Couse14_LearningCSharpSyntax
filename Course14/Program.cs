@@ -201,6 +201,54 @@ namespace Course14
 // ****************************************************** 5 *******************************************************
 // *************************************** Single Line/Multiple Lines Comments *******************************************************
 
+//using System;
+
+
+//namespace Course14
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            //This is a single line comment
+//            Console.WriteLine("My name is Dana Abu Elaish");
+
+//            /*
+//             This is
+//            a multiple line
+//            comment.
+//             */
+
+
+
+//        }
+//    }
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ****************************************************** 6 *******************************************************
+// ************************************************** Vairables *******************************************************
+
 using System;
 
 
@@ -210,16 +258,27 @@ namespace Course14
     {
         static void Main(string[] args)
         {
-            //This is a single line comment
-            Console.WriteLine("My name is Dana Abu Elaish");
 
-            /*
-             This is
-            a multiple line
-            comment.
-             */
+            string myName = "Dana Abu Elaish";
+            Console.WriteLine(myName);
 
+            int x=10 ; int y = 20;
 
+            Console.WriteLine("X = " + x);
+            Console.WriteLine("Y = " + y);
+
+            //This Line Will Give Wrong Answer :-(
+            Console.WriteLine("X + Y = " + x + y);
+
+            //This Line Will Give Right Answer :-)
+            Console.WriteLine("X + Y = " + (x + y));
+
+            //Other common data types
+            double myDouble = 25.89D;
+            char myLetter = 'D';
+            bool myBool = true;
+
+            Console.ReadKey();
 
         }
     }
