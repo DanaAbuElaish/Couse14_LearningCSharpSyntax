@@ -662,3 +662,81 @@ namespace Main
 }
 
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ****************************************************** 15 *******************************************************
+// ***************************************************** Anonymous Type *****************************************************
+
+using System;
+
+namespace Main
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+            //you dont specify any type here , automatically will be specified
+            var student = new { Id = 20, FirstName = "Dana", LastName = "Abu El-aish" };
+            Console.WriteLine("\nExample1 : \n");
+            Console.WriteLine(student.Id);
+            Console.WriteLine(student.FirstName);
+            Console.WriteLine(student.LastName);
+
+            Console.WriteLine("\n\n-------------------------\n\n");
+            // I can print like this
+            Console.WriteLine(student);
+
+            //anonymous types are read-only
+            //you cannot change the values of properties as they are read-only.
+
+            //student.Id = 2; //Error , Cannot Change Value
+            //student.FirstName = "Ali"; //Error , Cannot Change Value
+
+            //An anonymous type's property can include another anonymous type.
+
+            var student2 = new
+            {
+                Id = 20,
+                FirstName = "Dana",
+                LastName = "Abu El-aish",
+                Address = new { Id = 1, City = "Gaza", Country = "Palestine" }
+            };
+
+            Console.WriteLine("\n\nExample2 : \n");
+            Console.WriteLine(student2.Id);
+            Console.WriteLine(student2.FirstName);
+            Console.WriteLine(student2.LastName);
+
+            Console.WriteLine(student2.Address.Id);
+            Console.WriteLine(student2.Address.City);
+            Console.WriteLine(student2.Address.Country);
+            Console.WriteLine(student2.Address);
+
+
+
+
+
+            Console.ReadKey();
+
+        }
+    }
+}
