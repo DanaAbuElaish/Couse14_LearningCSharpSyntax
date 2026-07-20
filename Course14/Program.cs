@@ -446,6 +446,19 @@ namespace Course14
             Console.WriteLine("Min={0} , Max={1}", decimal.MinValue, decimal.MaxValue);
 
 
+            //Scientific Notation
+            //Use e or E to indicate the power of 10 
+            //as exponent part of scientific notation with float, double or decimal.
+
+            double d = 0.12e2;
+            Console.WriteLine(d);  // 12;
+
+            float f = 123.45e-2f;
+            Console.WriteLine(f);  // 1.2345
+
+            decimal m = 1.2e6m;
+            Console.WriteLine(m);// 1200000
+
 
         }
     }
