@@ -460,6 +460,15 @@ namespace Course14
             Console.WriteLine(m);// 1200000
 
 
+            //hex & Binary
+            int hex = 0x2F;
+            int binary = 0b_0010_1111;
+
+            Console.WriteLine(hex);
+            Console.WriteLine(binary);
+
+            Console.ReadKey();
+
         }
     }
 }
