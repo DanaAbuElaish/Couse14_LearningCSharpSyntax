@@ -435,6 +435,16 @@ namespace Course14
             Console.WriteLine("Min={0} , Max={1}", double.MinValue, double.MaxValue);
 
 
+            //Decimal
+            //The decimal type has more precision and a smaller range
+            //than both float and double,
+            //and so it is appropriate for financial and monetary calculations.
+            decimal d3 = 123456789123456789123456789.5m;
+            decimal d4 = 1.1234567891345679123456789123m;
+
+            Console.WriteLine("\nDecimal:");
+            Console.WriteLine("Min={0} , Max={1}", decimal.MinValue, decimal.MaxValue);
+
 
 
         }
