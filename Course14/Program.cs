@@ -388,6 +388,21 @@ namespace Course14
             Console.WriteLine("Min = {0} , Max{1} = ", UInt16.MinValue, UInt16.MaxValue);
 
 
+            //int
+            int i = -2147483648;
+            int j = 2147483647;
+            //  int k = 4294967295; //Compile-time error: Cannot implicitly convert type 'uint' to 'int'.
+
+            uint ui1 = 4294967295;
+            // uint ui2 = -1; //Compile-time error: Constant value '-1' cannot be converted to a 'uint'
+
+            Console.WriteLine("\nInt:");
+            Console.WriteLine("Min={0} , Max={1}", Int32.MinValue, Int32.MaxValue);
+
+            Console.WriteLine("\nUInt:");
+            Console.WriteLine("Min={0} , Max={1}", UInt32.MinValue, UInt32.MaxValue);
+
+
 
 
         }
