@@ -741,3 +741,56 @@ namespace Main
     }
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ****************************************************** 16 *******************************************************
+// ************************************************** Dynamic Type *****************************************************
+
+using System;
+
+namespace Main
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            dynamic myDynamicVar = 100;
+            Console.WriteLine("Value : {0}, Type : {1}", myDynamicVar, myDynamicVar.GetType());
+
+            myDynamicVar = "Hello World!!";
+            Console.WriteLine("Value : {0}, Type : {1}", myDynamicVar, myDynamicVar.GetType());
+
+            myDynamicVar = true;
+            Console.WriteLine("Value : {0}, Type : {1}", myDynamicVar, myDynamicVar.GetType());
+
+            myDynamicVar = DateTime.Now;
+            Console.WriteLine("Value : {0}, Type : {1}", myDynamicVar, myDynamicVar.GetType());
+
+
+
+            Console.ReadKey();
+        }
+    }
+}
