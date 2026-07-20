@@ -306,7 +306,7 @@ namespace Course14
 
 // ****************************************************** 8 *******************************************************
 // ***************************************** Implicitly Typed Variables *******************************************
-
+/*
 using System;
 
 
@@ -324,6 +324,56 @@ namespace Course14
             Console.WriteLine("X = {0} , Y = {1} , Z = {2}", x, y, z);
             
             Console.ReadKey();
+
+        }
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ****************************************************** 11 *******************************************************
+// ***************************************** Numbers Datatypes *******************************************
+
+using System;
+
+
+namespace Course14
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Byte
+
+            byte b1 = 255;
+            // byte b2 = -128;    compile-time error: Constant value '-128' cannot be converted to a 'byte'
+            sbyte sb1 = -128;
+            sbyte sb2 = 127;
+            Console.WriteLine("Byte : ");
+            Console.WriteLine("Min = {0} , Max = {1} ",Byte.MinValue,Byte.MaxValue);
+
+            Console.WriteLine("\nSByte : ");
+            Console.WriteLine("Min = {0} , Max = {1} ",SByte.MinValue,SByte.MaxValue);
+
+
 
         }
     }
