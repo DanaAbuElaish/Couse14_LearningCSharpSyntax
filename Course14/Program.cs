@@ -427,6 +427,16 @@ namespace Course14
 
 
 
+            //double
+            double d1 = 12345678912345.5d;
+            double d2 = 1.123456789123456d;
+
+            Console.WriteLine("\nDouble:");
+            Console.WriteLine("Min={0} , Max={1}", double.MinValue, double.MaxValue);
+
+
+
+
         }
     }
 }
