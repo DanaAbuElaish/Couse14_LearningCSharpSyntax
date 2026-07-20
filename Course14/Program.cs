@@ -403,6 +403,20 @@ namespace Course14
             Console.WriteLine("Min={0} , Max={1}", UInt32.MinValue, UInt32.MaxValue);
 
 
+            //Long
+            long l1 = -9223372036854775808;
+            long l2 = 9223372036854775807;
+
+            ulong ul1 = 18223372036854775808ul;
+            ulong ul2 = 18223372036854775808UL;
+
+            Console.WriteLine("\nLong:");
+            Console.WriteLine("Min={0} , Max={1}", Int64.MinValue, Int64.MaxValue);
+
+            Console.WriteLine("\nULong:");
+            Console.WriteLine("Min={0} , Max={1}", UInt64.MinValue, UInt64.MaxValue);
+
+
 
 
         }
