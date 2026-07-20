@@ -417,6 +417,14 @@ namespace Course14
             Console.WriteLine("Min={0} , Max={1}", UInt64.MinValue, UInt64.MaxValue);
 
 
+            //Float
+            float f1 = 123456.5F;
+            float f2 = 1.123456f;
+
+            Console.WriteLine("\nFloat:");
+            Console.WriteLine("Min={0} , Max={1}", float.MinValue, float.MaxValue);
+
+
 
 
         }
