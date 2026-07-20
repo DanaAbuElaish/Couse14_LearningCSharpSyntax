@@ -374,6 +374,21 @@ namespace Course14
             Console.WriteLine("Min = {0} , Max = {1} ",SByte.MinValue,SByte.MaxValue);
 
 
+            //Short
+            short s1 = -23768;
+            short s2 = -128;
+            // short s3 = 35000; //Compile-time error: Constant value '35000' cannot be converted to a 'short'
+            ushort s3 = 65535;
+            //  ushort us2 = -32000; //Compile-time error: Constant value '-32000' cannot be converted to a 'ushort'
+
+            Console.WriteLine("\nShort : ");
+            Console.WriteLine("Min = {0} , Max {1} = ", Int16.MinValue, Int16.MaxValue);
+
+            Console.WriteLine("\nUShort : ");
+            Console.WriteLine("Min = {0} , Max{1} = ", UInt16.MinValue, UInt16.MaxValue);
+
+
+
 
         }
     }
