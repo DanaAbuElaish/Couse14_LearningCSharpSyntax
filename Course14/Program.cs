@@ -819,6 +819,7 @@ namespace Main
 
 // ****************************************************** 17 ******************************************************
 // ********************************************** Set Date & Time *************************************************
+/*
 using System;
 
 namespace Main
@@ -846,9 +847,6 @@ namespace Main
             Console.WriteLine(dt3);
             Console.WriteLine(dt4);
 
-            Console.WriteLine(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-            Console.WriteLine(DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt"));
-
             Console.ReadKey();
         }
     }
@@ -875,3 +873,4 @@ namespace Main
 
 
 
+*/
