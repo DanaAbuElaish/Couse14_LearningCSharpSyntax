@@ -1812,3 +1812,165 @@ namespace Main
     }
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *********************************************************** 42 *************************************************************
+// ***************************************************** Switch Statement ***********************************
+
+using System;
+using System.Security.Cryptography;
+
+namespace Main
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            //switch statement with grouped cases
+
+            char ch;
+            Console.WriteLine("Enter a letter");
+            ch = Convert.ToChar(Console.ReadLine());
+
+            switch (Char.ToLower(ch))
+            {
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                    Console.WriteLine("Vowel");
+                    break;
+                default:
+                    Console.WriteLine("Not a vowel");
+                    break;
+            }
+
+
+            //switch statement with Break
+            char ch2;
+            Console.WriteLine("Enter a letter?");
+            ch2 = Convert.ToChar(Console.ReadLine());
+
+            switch (Char.ToLower(ch2))
+            {
+                case 'a':
+                    Console.WriteLine("Vowel");
+                    break;
+                case 'e':
+                    Console.WriteLine("Vowel");
+                    break;
+                case 'i':
+                    Console.WriteLine("Vowel");
+                    break;
+                case 'o':
+                    Console.WriteLine("Vowel");
+                    break;
+                case 'u':
+                    Console.WriteLine("Vowel");
+                    break;
+                default:
+                    Console.WriteLine("Not a vowel");
+                    break;
+            }
+
+
+
+
+            // Simple Calculator
+
+            char op;
+            double firstNumber, secondNumber, result;
+
+            Console.WriteLine("Enter First Number : ");
+            firstNumber = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter Second Number : ");
+            secondNumber = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter Operator : [+,-,/,*] : ");
+            op = Convert.ToChar(Console.ReadLine());
+
+
+            switch (op)
+            {
+                case '+':
+                    {
+                        result = firstNumber + secondNumber;
+                        Console.WriteLine("{0} + {1} = {2}", firstNumber, secondNumber, result);
+                        break;
+                    }
+
+                case '-':
+                    {
+                        result = firstNumber - secondNumber;
+                        Console.WriteLine("{0} - {1} = {2}", firstNumber, secondNumber, result);
+                        break;
+                    }
+
+                case '/':
+                    {
+                        result = firstNumber / secondNumber;
+                        Console.WriteLine("{0} / {1} = {2}", firstNumber, secondNumber, result);
+                        break;
+                    }
+
+                case '*':
+                    {
+                        result = firstNumber * secondNumber;
+                        Console.WriteLine("{0} * {1} = {2}", firstNumber, secondNumber, result);
+                        break;
+                    }
+
+                default:
+                    { 
+                    Console.WriteLine("Invalid Operator");
+                    break;
+            } 
+            }
+
+
+            string name = "Dana";
+
+            switch (name.ToLower())
+            {
+                case "dana":
+                    {
+                        Console.WriteLine("Yes Dana");
+                        break;
+                    }
+
+                case "ali":
+                    {
+                        Console.WriteLine("Yes Ali");
+                        break;
+                    }
+
+                default: 
+                    {
+                        Console.WriteLine("No Name Matched!");
+                        break;
+                    }
+            }
+
+
+
+            Console.ReadKey();
+        }
+    }
+}
