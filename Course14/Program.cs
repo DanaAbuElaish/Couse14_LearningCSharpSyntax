@@ -1526,3 +1526,46 @@ namespace Main
     }
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *********************************************************** 32 *************************************************************
+// ******************************************************** ReadLine(); ***********************************
+
+using System;
+
+namespace Main
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+
+            // Type your username and press enter
+
+            Console.WriteLine("Enter username : ");
+            string username = Console.ReadLine();
+
+            Console.WriteLine("Username is : " + username);
+
+            Console.ReadKey();
+        }
+    }
+}
