@@ -943,4 +943,52 @@ namespace Main
         }
     }
 }
-*/        
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *********************************************************** 20 ******************************************************
+// *********************************************** Datetime Static Fields***********************************************
+
+using System;
+
+namespace Main
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            DateTime currentDateTime = DateTime.Now;         //returns current date and time
+            DateTime todayDateTime = DateTime.Today;        // returns today's date
+            DateTime currentDateTimeUTC = DateTime.UtcNow;  // returns current UTC date and time
+            DateTime maxDateTimeValue = DateTime.MaxValue;  // returns max value of DateTime
+            DateTime minDateTimeValue = DateTime.MinValue;  // returns min value of DateTime
+
+
+            Console.WriteLine("Current DateTime : " + currentDateTime);
+            Console.WriteLine("Today DateTime : " + todayDateTime);
+            Console.WriteLine("Current DateTime UTC : " + currentDateTimeUTC);
+            Console.WriteLine("Max DateTime Value : " + maxDateTimeValue);
+            Console.WriteLine("Min DateTime Value : " + minDateTimeValue);
+
+            Console.ReadKey();
+        }
+    }
+}
