@@ -1570,3 +1570,50 @@ namespace Main
     }
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *********************************************************** 33 *************************************************************
+// ***************************************************** User Input and Numbers ***********************************
+
+using System;
+
+namespace Main
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+
+            // Type your username and press enter
+
+            Console.WriteLine("Enter Your Age : ");
+           int age = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Your age is : " + age);
+
+            Console.ReadKey();
+        }
+    }
+}
