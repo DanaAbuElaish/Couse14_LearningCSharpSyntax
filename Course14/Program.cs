@@ -1372,3 +1372,48 @@ namespace Main
     }
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *********************************************************** 29 *************************************************************
+// *************************************************** Explicit Casting *************************************
+
+using System;
+
+namespace Main
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+
+            double myDouble = 17.58;         
+            int myInt = (int) myDouble;  // Manual casting: double to int
+
+            Console.WriteLine(myInt);
+            Console.WriteLine(myDouble);
+
+            Console.ReadKey();
+        }
+    }
+}
+
