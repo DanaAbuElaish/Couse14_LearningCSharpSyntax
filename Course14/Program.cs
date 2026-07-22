@@ -1166,7 +1166,6 @@ namespace Main
 // *************************************************** Convert String to DateTime *************************************
 /*
 using System;
-using System.Runtime.CompilerServices;
 
 
 namespace Main
@@ -1209,3 +1208,71 @@ namespace Main
     }
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *********************************************************** 25 *************************************************************
+// *************************************************** Quick Overview C# Strings *************************************
+
+using System;
+
+
+
+namespace Main
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            string S1 = "Dana Abu Elaish";
+
+            Console.WriteLine(S1.Length);
+
+            //this will take 5 characters staring position 2
+            Console.WriteLine(S1.Substring(2, 5));
+            Console.WriteLine(S1.ToLower());
+            Console.WriteLine(S1.ToUpper());
+            Console.WriteLine(S1[2]);
+            Console.WriteLine(S1.Insert(3, "KKKK"));
+            Console.WriteLine(S1.Replace("n", "*"));
+            Console.WriteLine(S1.IndexOf("n"));
+            Console.WriteLine(S1.Contains("n"));
+            Console.WriteLine(S1.Contains("x"));
+            Console.WriteLine(S1.LastIndexOf("n"));
+
+            string S2 = "Ali,Ahmed,Khalid";
+
+            string[] NamesList = S2.Split(',');
+
+            Console.WriteLine(NamesList[0]);
+            Console.WriteLine(NamesList[1]);
+            Console.WriteLine(NamesList[2]);
+
+            string S3 = "  Abu-Elaish  ";
+            Console.WriteLine(S3.Trim());
+            Console.WriteLine(S3.TrimStart());
+            Console.WriteLine(S3.TrimEnd());
+
+
+            Console.ReadKey();
+        }
+    }
+}
