@@ -1277,3 +1277,54 @@ namespace Main
     }
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *********************************************************** 26 *************************************************************
+// *************************************************** String Interpolation *************************************
+
+using System;
+
+
+
+namespace Main
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            //  String Interpolation
+
+            string firstName = "Dana";
+            string lastName = "Abu Elaish";
+            string code = "107";
+
+            //You shold use $ to $ to identify an interpolated string 
+            string fullName = $"Eng. {firstName} {lastName}, Code :{code}";
+
+            Console.WriteLine(fullName);   
+
+            Console.ReadKey();
+        }
+    }
+}
