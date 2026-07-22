@@ -1046,3 +1046,47 @@ namespace Main
     }
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *********************************************************** 22 *************************************************************
+// ************************************ Subtraction of two dates results in TimeSpan ******************************************
+
+using System;
+using System.ComponentModel.Design.Serialization;
+
+namespace Main
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            DateTime dt1 = new DateTime(2026, 7, 22);
+            DateTime dt2 = new DateTime(2026, 7, 26);
+            TimeSpan result = dt2.Subtract(dt1);
+
+            Console.WriteLine(result.Days);
+
+            Console.ReadKey();
+        }
+    }
+}
