@@ -1468,3 +1468,60 @@ namespace Main
     }
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *********************************************************** 31 *************************************************************
+// ******************************************************* Casting Enums ***********************************
+
+using System;
+
+namespace Main
+{
+    internal class Program
+    {
+
+        enum enWeekDays
+        {
+            Monday,
+            Tuesday,
+            Wednesday,
+            Thursday,
+            Friday,
+            Saturday,
+            Sunday
+        }
+
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine(enWeekDays.Friday);
+            int day = (int)enWeekDays.Friday;
+            Console.WriteLine(day);
+
+            var wd = (enWeekDays)5;
+            Console.WriteLine(wd);
+
+            Console.ReadKey();
+        }
+    }
+}
