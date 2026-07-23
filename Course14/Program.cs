@@ -2246,3 +2246,57 @@ namespace Main
     }
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *********************************************************** 52 *************************************************************
+// *********************************************** Access Array Elements ******************************************************
+
+using System;
+
+
+namespace Main
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            int[] numbers = { 1, 2, 3 };
+            //access first element
+            Console.WriteLine("Element in the first index : " + numbers[0]);
+            //access second element
+            Console.WriteLine("Element in the second index : " + numbers[1]);
+            //access third element
+            Console.WriteLine("Element in third index : " + numbers[2]);
+
+            //Through loop
+            Console.WriteLine("\nAccess array using loop : ");
+            for (short i = 0; i < numbers.Length; i++)
+            {
+                Console.WriteLine("Elements in index {0} : {1} ", i, numbers[i]);
+            }
+
+            Console.ReadKey();
+
+        }
+    }
+}
