@@ -2621,3 +2621,44 @@ namespace Main
     }
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *********************************************************** 60 *************************************************************
+// **************************************************** Method Parameters **********************************************************
+
+using System;
+using System.Net.NetworkInformation;
+
+namespace Main
+{
+    internal class Program
+    {
+
+        static void funcPrintMyInfo(string name , byte age)
+        {
+            Console.WriteLine("Name : {0} , Age : {1}", name, age);
+        }
+        
+        static void Main(string[] args)
+        {
+
+            funcPrintMyInfo("Dana Khaled Abu El-aish", 22);
+
+            Console.ReadKey();
+
+        }
+    }
+}
