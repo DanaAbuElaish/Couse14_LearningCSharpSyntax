@@ -2575,3 +2575,48 @@ namespace Main
     }
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *********************************************************** 59 *************************************************************
+// ********************************************************* C# Methods **********************************************************
+
+using System;
+
+namespace Main
+{
+    internal class Program
+    {
+
+        static void funcPrintMyName()
+        {
+            Console.WriteLine("Dana Khaled Abu Elaish");
+        }
+        static void Main(string[] args)
+        {
+
+            funcPrintMyName();
+
+            Console.ReadKey();
+
+        }
+    }
+}
