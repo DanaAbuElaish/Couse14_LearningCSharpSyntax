@@ -2349,3 +2349,75 @@ namespace Main
     }
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *********************************************************** 55 *************************************************************
+// ************************************************* Syntax of foreach loop ******************************************************
+
+using System;
+
+
+namespace Main
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+
+            char[] myArray = { 'H', 'e', 'l', 'l', 'o' };
+
+            foreach (char c in myArray)
+            {
+                Console.WriteLine(c);
+            }
+
+
+
+
+
+
+
+
+            char[] gender = { 'm', 'f', 'm', 'm', 'm', 'f', 'f', 'm', 'm', 'f' };
+            int male = 0, female = 0;
+
+            foreach (char g in gender)
+            {
+                {
+                    if (g == 'm')
+                    {
+                        male++;
+                    }else if (g == 'f')
+                    {
+                        female++;
+                    }
+
+                    }
+                }
+            Console.WriteLine("Number of male   = {0}", male);
+            Console.WriteLine("Number of Female = {0}", female);
+
+
+            Console.ReadKey();
+
+        }
+    }
+}
