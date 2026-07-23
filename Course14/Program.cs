@@ -2552,12 +2552,8 @@ namespace Main
 
 // *********************************************************** 58 *************************************************************
 // ********************************************************* C# Math **********************************************************
-
+/*
 using System;
-
-
-// provides us various methods to use in an array
-using System.Linq;
 
 namespace Main
 {
@@ -2573,13 +2569,9 @@ namespace Main
             Console.WriteLine("Absolute (positive) value of -4.7 is : {0}", Math.Abs(-4.7));
             Console.WriteLine("Round of 9.99 is                     : {0}", Math.Round(9.99));
 
-
-
-
-
-
             Console.ReadKey();
 
         }
     }
 }
+*/
