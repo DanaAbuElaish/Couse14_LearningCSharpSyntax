@@ -2662,3 +2662,49 @@ namespace Main
     }
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *********************************************************** 61 *************************************************************
+// *********************************************** Default Parameter Value **********************************************************
+
+using System;
+
+namespace Main
+{
+    internal class Program
+    {
+
+        static void funcPrintMyInfo(string name , byte age , string address = "No Address")
+        {
+            Console.WriteLine("Name : {0} , Age : {1} , Address : {2}", name, age, address);
+        }
+        
+        static void Main(string[] args)
+        {
+
+            funcPrintMyInfo("Dana Khaled Abu El-aish", 22);
+            funcPrintMyInfo("Dana Khaled Abu El-aish", 22, "Gaza-Palestine");
+
+            Console.ReadKey();
+
+        }
+    }
+}
