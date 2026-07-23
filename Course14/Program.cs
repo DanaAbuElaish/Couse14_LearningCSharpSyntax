@@ -2917,3 +2917,50 @@ namespace Main
     }
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *********************************************************** 66 ************************************************************
+// *************************************************** Random Function In C# **********************************************************
+
+using System;
+
+namespace Main
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Random rnd = new Random();
+
+            for (int i = 0; i < 4; i++)
+            {
+                Console.WriteLine(rnd.Next(10, 20)); // returns random integers >= 10 and < 20
+            }
+
+            Console.ReadKey();
+
+        }
+    }
+}
