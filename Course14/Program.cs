@@ -2475,3 +2475,56 @@ namespace Main
     }
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *********************************************************** 57 *************************************************************
+// ************************************** Count , Sum And Average Using System.Linq *******************************************
+
+using System;
+
+
+// provides us various methods to use in an array
+using System.Linq;
+
+namespace Main
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            // Note that we used System.Linq above.
+            int[] numbers = { 20, 22, 19, 18, 1 };
+
+            // compute count
+            Console.WriteLine("Count     : " + numbers.Count());
+            // compute sum
+            Console.WriteLine("Sum       : " + numbers.Sum());
+            // compute Average
+            Console.WriteLine("Average   : " + numbers.Average());
+
+
+
+            Console.ReadKey();
+
+        }
+    }
+}
