@@ -2709,3 +2709,49 @@ namespace Main
     }
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *********************************************************** 62 ************************************************************
+// ******************************************************* Return Values **********************************************************
+
+using System;
+
+namespace Main
+{
+    internal class Program
+    {
+
+        static string funcGetMyName()
+        {
+            return "Dana Khaled Abu El-aish";
+        }
+        
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("My Name is : {0}", funcGetMyName());
+
+            Console.ReadKey();
+
+        }
+    }
+}
